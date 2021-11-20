@@ -1,13 +1,17 @@
 {
   "name": "vidly",
   "version": "1.0.0",
-  "description": "",
+  "description": "Vidly Application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git://https://github.com/MichaelKirsch/vidly"
+  },
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
@@ -18,7 +22,10 @@
     "joi-objectid": "^2.0.0",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
-    "mongoose": "^5.0.2",
+    "mongoose": "^5.13.13",
     "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1"
   }
 }
