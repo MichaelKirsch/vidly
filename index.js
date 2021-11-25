@@ -1,4 +1,5 @@
 const express = require('express');
+const winston = require('winston');
 const app = express();
 //set routes
 require('./startup/routes')(app);
@@ -8,4 +9,6 @@ require('./startup/errosHandlingInit')();
 require ('./startup/databaseInit')();
 //start server
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Listening on port ${port}...`));
+const server = app.listen(port, () => winston.info(`Listening on port ${port}...`));
+
+module.exports = server;

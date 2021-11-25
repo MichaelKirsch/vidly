@@ -3,7 +3,7 @@ const config = require('config')
 
 module.exports = function () {
     winston.add(new winston.transports.File({ filename: "logfile.log" }))
-    winston.add(new winston.transports.Console());
+    //winston.add(new winston.transports.Console());
     winston.info('App started');
 
     //log everything that failed directly to the file
