@@ -17,7 +17,7 @@ steps:
 
 - script: |
     npm install
-    npm run build
+    npm run test
   displayName: 'npm install and test'
   env:
-      NODE_ENV: "test_remote"
+      NODE_ENV: "development"
